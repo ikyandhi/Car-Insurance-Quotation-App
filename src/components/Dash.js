@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { isLoggedIn } from './AuthService';
 import { Table } from 'react-bootstrap';
 import axios from 'axios';
-import { VictoryChart, VictoryAxis, VictoryBar, VictoryTooltip, VictoryVoronoiContainer } from 'victory'
-        import '../App.css';
+import { VictoryChart, VictoryAxis, VictoryBar, VictoryTooltip, VictoryVoronoiContainer } from 'victory';
+import '../App.css';
 
 const MOCK_QUOTES_SUMMARY_JSON = 'quotes_summary_7d.json';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { logout } from './AuthService';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class DashNav extends Component {
     constructor(props) {

@@ -119,6 +119,11 @@ class Summary extends Component {
         e.preventDefault();
         alert("Quote summary sms has been sent to " + this.state.formData.profile.mobile);
     }
+    
+    handlePurchase(e){
+        e.preventDefault();
+        alert("Your purchase has been placed.");
+    }
 
     render() {
         return (
@@ -200,7 +205,7 @@ class Summary extends Component {
                                                 <h5 className="text-right">0% Service Charge Included</h5>
                                             </div>
                                             <div className="checkoutCTA text-center">
-                                                <button className="btn btn-success btn-lg btn-block">Pay Now</button>
+                                                <button className="btn btn-success btn-lg btn-block" onClick={this.handlePurchase.bind(this)}>Pay Now</button>
                                             </div>
                                         </div>
                                     </div>

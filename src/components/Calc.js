@@ -3,6 +3,7 @@ import { FormControl, FormGroup, ControlLabel} from 'react-bootstrap';
 import { appendData, fetchData } from '../components/SessionService';
 import WizardNav from '../components/WizardNav';
 import { getValidator } from '../components/Helper';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 const coverageType = {
@@ -176,7 +177,7 @@ class Calc extends Component {
                                     <div className="form-group">
                                         <div className="col-sm-offset-4 col-sm-8">
                                             <div className="pull-right">
-                                                <button type="button" className="btn btn-default" onClick={this.handleSubmit.bind(this)} >Back</button> &nbsp;
+                                                <Link className="btn btn-default" to="/">Back</Link>&nbsp;
                                                 <button type="button" className="btn btn-primary" onClick={this.handleSubmit.bind(this)} >Save &amp; Continue</button>
                                             </div>
                                         </div>
